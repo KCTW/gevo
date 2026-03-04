@@ -1,0 +1,59 @@
+{
+  "epic": "Pre-judgment Engine",
+  "domain_entities": [
+    {
+      "name": "Order",
+      "states": ["Created", "Pending_Judgment", "Judgment_Passed", "Manual_Intervention_Required", "Blocked"]
+    },
+    {
+      "name": "ItemLabel",
+      "properties": ["Is_Battery", "Is_Alcohol", "Is_Restricted"]
+    },
+    {
+      "name": "Warehouse",
+      "types": ["Standard", "ECMS"]
+    }
+  ],
+  "edge_cases": [
+    "EC-01: API Timeout or connection failure with 185 system during label fetching.",
+    "EC-02: Conflicting rules (e.g., Order qualifies for both Air Freight and contains restricted items requiring Sea Freight).",
+    "EC-03: Concurrent judgment triggers if an order is updated while judgment is processing."
+  ],
+  "stories": [
+    {
+      "id": "WMS-PRE-01",
+      "title": "鑑定狀態檢查 (Authentication Check)",
+      "ac": [
+        "Given an order with 'Authentication Service' purchased, When checking status, Then verify 185 API response.",
+        "If status is 'C-3 (Pending Authentication)', block order and route to Authentication Dept.",
+        "If status is 'C-1-a (Fake)', retain on shelf and trigger manual refund workflow."
+      ]
+    },
+    {
+      "id": "WMS-PRE-03",
+      "title": "合規與特殊商品檢查 (Compliance & Restricted Check)",
+      "ac": [
+        "Given order labels from 185, When evaluating items, Then flag restricted goods (C-1-c).",
+        "If 'B-3 (Lithium Battery)' label exists, require worker to attach battery sticker and force Sagawa export.",
+        "If 'B-4 (Alcohol)' label exists, require worker inspection and force Sagawa export with alcohol declaration."
+      ]
+    },
+    {
+      "id": "WMS-PRE-05",
+      "title": "出貨與集貨規則 (Shipping & Consolidation Rules)",
+      "ac": [
+        "Given WMS inbound records, When evaluating the same member's orders on the same day, Then check count >= 3.",
+        "If regular member (B-6), route to Consolidation Box, pending worker release.",
+        "If non-regular member (B-5), allow sequential release based on 2-item-per-day limit."
+      ]
+    },
+    {
+      "id": "WMS-PRE-09",
+      "title": "國際運送方式自動決策 (International Freight Routing)",
+      "ac": [
+        "Given order contents, When comparing against import/export customs rules, Then determine freight type.",
+        "Output must be one of: 'Pass (Air)', 'Force Air Transfer', 'Force Sea Transfer'."
+      ]
+    }
+  ]
+}

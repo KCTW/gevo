@@ -1,0 +1,35 @@
+{
+  "benchmark": "Product Discovery Zero-Shot Ideation",
+  "cases": [
+    {
+      "id": "CASE-01",
+      "category": "Consumer App",
+      "prompt": "我想做一個自動化個人理財記帳 App。",
+      "goal": "根據單句描述生成包含 MVP 功能與技術棧的 Backlog。"
+    },
+    {
+      "id": "CASE-02",
+      "category": "CLI Tool",
+      "prompt": "開發一個能夠自動掃描程式碼並生成 README 的 CLI 工具。",
+      "goal": "驗證對開發者工具與自動化工作流的拆解能力。"
+    },
+    {
+      "id": "CASE-03",
+      "category": "Enterprise System",
+      "prompt": "建構一個支援多租戶與角色權限控管的企業級 CRM 系統。",
+      "goal": "測試對複雜權限模型與數據隔離的設計深度。"
+    },
+    {
+      "id": "CASE-04",
+      "category": "Web Service",
+      "prompt": "做一個類似 GitHub Gist 但支援即時協作編輯的代碼分享平台。",
+      "goal": "考驗對即時通訊 (WebSockets) 與數據同步的技術理解。"
+    },
+    {
+      "id": "CASE-05",
+      "category": "IoT/Embedded",
+      "prompt": "設計一個智慧家庭中控系統，可整合不同品牌的燈光與溫度感測器。",
+      "goal": "測試對硬體介面、通訊協議與抽象層設計的想像力。"
+    }
+  ]
+}

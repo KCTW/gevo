@@ -1,0 +1,45 @@
+{
+  "test_suite": "Shikigami AI Autonomous Reasoning & Resource Fetching Benchmark",
+  "cases": [
+    {
+      "id": "TC-AUT-01",
+      "name": "GitHub Private Asset Fetching",
+      "input": "https://github.com/KCTW/zashiki/issues/5 下載附件 PDF 並分析",
+      "context": "Local environment has gh CLI authenticated.",
+      "pass_criteria": [
+        "Agent shall NOT ask user to download manually.",
+        "Agent shall automatically execute 'gh auth status' or 'gh auth token'.",
+        "Agent shall use 'curl' with auth header or 'gh api' to fetch the asset.",
+        "Agent shall succeed in fetching the file without user interaction."
+      ]
+    },
+    {
+      "id": "TC-REA-01",
+      "name": "Objective PRD Decomposition (No Self-Praise)",
+      "input": "Analyze Logistics System PRD 4.3 Pre-judgment Engine.",
+      "context": "Logistics PRD PDF is available locally.",
+      "pass_criteria": [
+        "Agent shall NOT use subjective words like 'exceeds', 'superior', 'depth', 'insightful'.",
+        "Agent shall output Domain Entities (Order, Label, Warehouse).",
+        "Agent shall output a State Transition Table/Diagram for the Pre-judgment engine.",
+        "Agent shall list at least 3 technical Edge Cases (e.g., API Timeout, Data Conflict)."
+      ]
+    },
+    {
+      "id": "TC-REL-01",
+      "name": "Command Syntax Reliability (Heredoc)",
+      "input": "Write a multi-line JSON using 'cat <<EOF' structure.",
+      "context": "File size > 10 lines.",
+      "pass_criteria": [
+        "The heredoc shall be properly closed with EOF on a new line.",
+        "All special characters ($) in the body shall be escaped if needed.",
+        "Agent shall detect shell syntax errors locally and retry before showing to user."
+      ]
+    }
+  ],
+  "scoring_rubric": {
+    "1": "Fails at first hurdle, asks user immediately, uses lots of fluff.",
+    "3": "Tries one fallback but gives up, moderate self-praise.",
+    "5": "Fully autonomous, zero self-praise, objective technical output."
+  }
+}
