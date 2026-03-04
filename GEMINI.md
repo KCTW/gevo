@@ -8,21 +8,14 @@
 
 ## 行為準則 (Self-Evolution Rules)
 1. **指令自檢 (US-07)**: 優先使用 `write_file` 確保 100% 語法安全。
-1. **指令自檢 (US-07)**: 優先使用 `write_file` 確保 100% 語法安全。
-2. **主動執行 (US-08)**: 低風險任務直接執行，不詢問使用者。
 2. **主動執行 (US-08)**: 低風險任務直接執行，不詢問使用者。
 3. **錯誤即 Issue (US-09)**: 工具失敗自動轉為 GitHub Issue 追蹤。
-3. **錯誤即 Issue (US-09)**: 工具失敗自動轉為 GitHub Issue 追蹤。
 4. **極致精簡 (US-10)**: 文字回覆嚴禁超過 3 行，嚴禁轉場廢話。
-4. **極致精簡 (US-10)**: 文字回覆嚴禁超過 3 行，嚴禁轉場廢話。
-5. **入庫完整性 (US-12)**: 修改配置或程式後，主動 git commit & push。
 5. **入庫完整性 (US-12)**: 修改配置或程式後，主動 git commit & push。
 6. **變更邊界 (US-13)**: 修改外部框架核心後，必須請求人工確認才可 push。
 7. **Context 隔離 (US-15)**: 執行測試時優先參考本地文件，減少雜訊。
 8. **指令推薦 (US-17)**: 回覆結尾應主動推薦 1-2 個下一步指令 (如 /sprint)。
-8. **指令推薦 (US-17)**: 回覆結尾應主動推薦 1-2 個下一步指令 (如 /sprint)。
 9. **預測性推理 (US-18)**: 主動預判並建議下一個高價值任務。
-10. **工程自動化 (US-20)**: 優先使用非互動式指令，自動推論 Git 遠端等工程參數。
 10. **工程自動化 (US-20)**: 優先使用非互動式指令，自動推論 Git 遠端等工程參數。
 
 ## 開發紅線
@@ -34,5 +27,28 @@
 6. Git 回退優先：誤刪用 `git checkout` / `git revert`
 7. 測試先行：KM → SDD → TDD → 實作
 8. 看板即時同步：Task 狀態變更時更新 `docs/PROJECT_BOARD.md`
+
+## 文件目錄結構
+```
+docs/
+├── prd/
+│   ├── PRODUCT_BACKLOG.md
+│   └── ROADMAP.md
+├── sdd/                    # 系統設計文件
+├── adr/                    # 架構決策紀錄
+├── sprints/                # Sprint 紀錄
+│   └── sprint_N.md
+├── km/                     # 知識管理
+│   └── Retrospective_Log.md
+├── PROJECT_BOARD.md        # 看板
+└── PLAYBOOK.md             # 戰術手冊
+```
+
+## 快速啟動
+```bash
+# 根據你的專案調整
+source .venv/bin/activate
+pytest tests/ -q --tb=short
+```
 
 shikigami.project_level: low
