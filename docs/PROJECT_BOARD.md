@@ -9,14 +9,16 @@
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
 ### 🚀 進行中 (In Progress)
-- [ ] **US-04**：執行對標測試 (Gemini vs Claude) [Issue #4]
+- [ ] **US-21**：實作系統自癒機制 (Self-Healing RCA) [Issue #44]
 
 ### 📋 待辦清單 (Backlog)
-- [ ] **US-LOG-01~22**：日倉物流系統全模組拆解
+- [ ] **US-22**：封裝 Ideation 能力至 Shikigami Skill [Issue #45]
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | 完成日期 | Points |
 |----------|------|--------|----------|--------|
+| US-LOG-01~22 | 日倉物流系統全模組拆解 | Sprint 4 | 2026-03-04 | 5 |
+| US-04 | 執行對標測試 (Gemini vs Claude) | Sprint 2 | 2026-03-04 | 2 |
 | US-01 | 建立 Product Discovery 標準測試集 | Sprint 2 | 2026-03-04 | 2 |
 | US-02 | 制定計分卡 | Sprint 2 | 2026-03-04 | 1 |
 | US-03 | 實作 Zero-Shot Ideation Skill | Sprint 4 | 2026-03-04 | 3 |
