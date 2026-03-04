@@ -10,6 +10,14 @@
 - **技術棧**：之後再選型
 - **語言慣例**：Git commit 與文件使用中文，檔名使用英文 snake_case
 
+## 行為準則 (Self-Evolution Rules)
+
+1. **指令自檢 (US-07)**: Agent 在執行 `run_shell_command` 前，必須掃描指令中的 quotes, heredocs, brackets 閉合狀態。對於多行寫入，優先使用 `write_file` API 以確保語法安全。
+2. **主動執行 (US-08)**: 在分析出低風險的下一步（如：更新文件、產出設計、修復 bug）後，必須直接呼叫工具執行，嚴禁停下來詢問使用者。
+3. **錯誤即 Issue (US-09)**: 任何導致任務中斷的工具錯誤 (Syntax Error, Tool Failure)，必須主動建立 GitHub Issue 或 Comment。
+4. **極致精簡 (US-10)**: 文字回覆嚴禁超過 3 行，嚴禁轉場與總結廢話。
+4. **極致精簡 (US-10)**: 文字回覆嚴禁超過 3 行，嚴禁轉場與總結廢話。
+
 ## 開發紅線
 
 1. 虛擬環境強制：`./.venv/bin/pip`
