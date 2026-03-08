@@ -1,22 +1,25 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 19 (學習與度量)
-- **Sprint Goal**: 實作自主學習機制與跨專案度量對標。
-- 預計 Velocity：6 points
+### Sprint 20 (規則自動化)
+- **Sprint Goal**: 建立規則熱更新與結構保護機制。
+- 預計 Velocity：3 points
 
-## 🎯 當前里程碑：v1.2 深度演進與生態系
+## 🎯 當前里程碑：v1.3 群體演進與自動防禦
 
-### 🚀 Sprint Backlog (Sprint 19)
+### 🚀 Sprint Backlog (Sprint 20)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-44**: 建立 Agent 人格特質模型 (M)
-- [ ] **US-45**: 實作進化穩定性壓力測試 (L)
+- [ ] **US-57**: 建立跨專案進化日誌同步機制 (M)
+- [ ] **US-58**: 建立正式的對抗性辯論框架 (M)
+- [ ] **US-59**: 執行 Chaos Monkey v2 終極自癒壓力測試 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
-|----------|------|--------|----------|
+|----------|------|--------|--------|
+| US-55 | 實作 prompt_patcher.sh | Sprint 20 | 2 |
+| US-56 | 升級 quality_gate.sh | Sprint 20 | 1 |
 | US-42 | Agent 自主學習摘要機制 | Sprint 19 | 3 |
 | US-43 | 建立跨專案進化指標對標網 | Sprint 19 | 3 |
 | US-40 | 建立全域錯誤特徵指紋庫 | Sprint 18 | 2 |
