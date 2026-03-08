@@ -8,7 +8,6 @@
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
 ### 🚀 Sprint Backlog (Sprint 7)
-- [ ] **US-07**: 強化指令生成的可靠性與語法自檢 (M)
 - [ ] **US-08**: 消除「Wait-for-Prompt」反模式 (S)
 - [ ] **US-09**: 實作「錯誤即 Issue」的自癒追蹤機制 (M)
 
@@ -20,6 +19,7 @@
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-07 | 強化指令生成的可靠性與語法自檢 | Sprint 7 | 2 |
 | US-06 | 強化 Agent 獲取受限資源的自主性 | Sprint 7 | 2 |
 | US-10 | 實作「極致精簡」通訊協議 | Sprint 7 | 1 |
 | US-01 | 建立 Product Discovery 標準測試集 | Sprint 6 | 2 |
