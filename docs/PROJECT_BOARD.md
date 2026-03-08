@@ -1,24 +1,26 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 8 (自癒與發想封裝)
-- **Sprint Goal**: 執行產品發想對標測試，分析行為缺陷，並封裝 Ideation 能力與發想評估指標。
-- 預計 Velocity：7 points
+### Sprint 9 (系統自癒與自動化)
+- **Sprint Goal**: 實作工具失敗的自動 RCA 機制，升級看板同步自動化。
+- 預計 Velocity：4 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 8)
+### 🚀 Sprint Backlog (Sprint 9)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-21**: 自癒機制 (Self-Healing RCA) (M)
 - [ ] **US-22**: 封裝能力至 Shikigami Skill (M)
 - [ ] **US-23**: 自動化 Sprint 管理 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
-| #52 | retro: 建立 Sprint Planning 前的看板與 GitHub 對齊機制 | Sprint 8 | 1 |
+| US-21 | 自癒機制 (Self-Healing RCA) | Sprint 9 | 2 |
+| US-55 | 升級 sync_board.sh 為自動覆寫 | Sprint 9 | 1 |
+| US-05 | 修正 PO Agent 推理缺陷 | Sprint 9 | 1 |
+| #52 | retro: 建立看板與 GitHub 對齊機制 | Sprint 8 | 1 |
 | US-03 | 封裝 Zero-Shot Ideation 能力 | Sprint 8 | 2 |
 | US-04 | 執行對標測試與分析報告 | Sprint 8 | 2 |
 | US-02 | 制定 Product Discovery 評估指標與計分卡 | Sprint 8 | 1 |
