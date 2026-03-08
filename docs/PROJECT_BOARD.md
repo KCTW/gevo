@@ -1,22 +1,24 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 22 (對抗辯論)
-- **Sprint Goal**: 建立正式的對抗性審查框架。
+### Sprint 23 (人格特質)
+- **Sprint Goal**: 建立 Agent 人格特質模型與注入機制。
 - 預計 Velocity：3 points
 
 ## 🎯 當前里程碑：v1.3 群體演進與自動防禦
 
-### 🚀 Sprint Backlog (Sprint 22)
+### 🚀 Sprint Backlog (Sprint 23)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
 - [ ] **US-59**: 執行 Chaos Monkey v2 終極自癒壓力測試 (L)
-- [ ] **US-60**: 建立 Agent 人格特質模型 (M)
+- [ ] **US-61**: 實作全域進化穩定性評分系統 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-60 | 建立 Agent 人格特質模型 | Sprint 23 | 2 |
+| US-44 | 實作特質驅動的提示詞注入 | Sprint 23 | 1 |
 | US-58 | 建立正式的對抗性辯論框架 | Sprint 22 | 2 |
 | US-26 | 對抗審查成果歸檔機制 | Sprint 22 | 1 |
 | US-57 | 建立跨專案進化日誌同步機制 | Sprint 21 | 2 |

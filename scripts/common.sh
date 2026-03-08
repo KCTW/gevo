@@ -10,8 +10,17 @@ check_file() {
   fi
 }
 
-# 具備指數退避的重試函數 (US-41)
-retry_with_backoff() {
+# 根據角色注入人格特質提示詞 (US-44)
+inject_persona() {
+  local role=$1
+  case $role in
+    "architect") echo "【Persona: Architect】你現在是極度關注擴展性與模組化的架構師。";;
+    "qa") echo "【Persona: QA】你現在是極度挑剔且專注於邊界條件測試的工程師。";;
+    "security") echo "【Persona: Security】你現在是專注於資安風險與防禦的專家。";;
+    *) echo "【Persona: General】你現在是專業的 AI 工程夥伴。";;
+  esac
+}
+
   local max_attempts=3
   local timeout=1
   local attempt=1
