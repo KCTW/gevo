@@ -1,19 +1,22 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 7 (自律與自主強化)
-- **Sprint Goal**: 強化 Agent 自律與自主性，落實「精簡通訊」、「主動執行」、「錯誤自癒」與「Issue 導向開發」。
+### Sprint 8 (自癒與發想封裝)
+- **Sprint Goal**: 執行產品發想對標測試，分析行為缺陷，並封裝 Ideation 能力與發想評估指標。
 - 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 7)
-(所有 Stories 已完成)
+### 🚀 Sprint Backlog (Sprint 8)
+- [ ] **US-04**: 執行對標測試與分析報告 (M) [進行中]
+- [ ] **US-03**: 封裝 Zero-Shot Ideation 能力 (M)
+- [ ] **US-02**: 制定 Product Discovery 評估指標與計分卡 (S)
+- [ ] **#52**: retro: 建立 Sprint Planning 前的看板與 GitHub 對齊機制 (S)
 
 ### 📋 Product Backlog
-- [ ] **US-02**: 制定 Product Discovery 評估指標與計分卡 (S)
-- [ ] **US-03**: 封裝 Zero-Shot Ideation 能力 (M)
-- [ ] **US-04**: 執行對標測試與分析報告 (M)
+- [ ] **US-21**: 自癒機制 (Self-Healing RCA) (M)
+- [ ] **US-22**: 封裝能力至 Shikigami Skill (M)
+- [ ] **US-23**: 自動化 Sprint 管理 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
