@@ -1,40 +1,26 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 4 統計
-- Velocity：3 points
-- 完成率：100%（完成 1 / 計畫 1）
-- 日期：2026-03-04
+### Sprint 7 (自律與自主強化)
+- **Sprint Goal**: 強化 Agent 自律與自主性，落實「精簡通訊」、「主動執行」、「錯誤自癒」與「Issue 導向開發」。
+- 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 進行中 (In Progress)
-- [ ] **US-21**：實作系統自癒機制 (Self-Healing RCA) [Issue #44]
+### 🚀 Sprint Backlog (Sprint 7)
+- [ ] **US-10**: 實作「極致精簡」通訊協議 (S)
+- [ ] **US-07**: 強化指令生成的可靠性與語法自檢 (M)
+- [ ] **US-08**: 消除「Wait-for-Prompt」反模式 (S)
+- [ ] **US-09**: 實作「錯誤即 Issue」的自癒追蹤機制 (M)
+- [ ] **US-06**: 強化 Agent 獲取受限資源的自主性 (M)
 
-### 📋 待辦清單 (Backlog)
-- [ ] **US-22**：封裝 Ideation 能力至 Shikigami Skill [Issue #45]
+### 📋 Product Backlog
+- [ ] **US-02**: 制定 Product Discovery 評估指標與計分卡 (S)
+- [ ] **US-03**: 封裝 Zero-Shot Ideation 能力 (M)
+- [ ] **US-04**: 執行對標測試與分析報告 (M)
 
 ### ✅ 已完成 (Done)
-| Story ID | 標題 | Sprint | 完成日期 | Points |
-|----------|------|--------|----------|--------|
-| US-LOG-01~22 | 日倉物流系統全模組拆解 | Sprint 4 | 2026-03-04 | 5 |
-| US-04 | 執行對標測試 (Gemini vs Claude) | Sprint 2 | 2026-03-04 | 2 |
-| US-01 | 建立 Product Discovery 標準測試集 | Sprint 2 | 2026-03-04 | 2 |
-| US-02 | 制定計分卡 | Sprint 2 | 2026-03-04 | 1 |
-| US-03 | 實作 Zero-Shot Ideation Skill | Sprint 4 | 2026-03-04 | 3 |
-| US-05 | 修正 PO Agent 推理缺陷 | Sprint 1 | 2026-03-04 | 2 |
-| US-06 | 強化資源獲取自主性 | Sprint 1 | 2026-03-04 | 2 |
-| US-07 | 強化指令生成可靠性 | Sprint 1 | 2026-03-04 | 1 |
-| US-08 | 消除 Wait-for-Prompt 反模式 | Sprint 1 | 2026-03-04 | 1 |
-| US-09 | 實作「錯誤即 Issue」自癒追蹤 | Sprint 1 | 2026-03-04 | 2 |
-| US-10 | 驗證極致精簡通訊協議 | Sprint 2 | 2026-03-04 | 1 |
-| US-11 | 處理 gh CLI 版本相容性問題 | Sprint 3 | 2026-03-04 | 1 |
-| US-12 | 實作「任務完整性自檢」機制 | Sprint 3 | 2026-03-04 | 1 |
-| US-13 | 實作「變更控制邊界」 | Sprint 3 | 2026-03-04 | 2 |
-| US-14 | 實作「緊急還原免責」協議 | Sprint 3 | 2026-03-04 | 1 |
-| US-15 | 實作「對話 Context 隔離」機制 | Sprint 3 | 2026-03-04 | 1 |
-| US-16 | 實作「全局狀態一致性」審查 | Sprint 3 | 2026-03-04 | 1 |
-| US-17 | 實作「主動指令推薦」機制 | Sprint 3 | 2026-03-04 | 1 |
-| US-18 | 實作「預測性推理」機制 | Sprint 3 | 2026-03-04 | 2 |
-| US-19 | 實作「動態測試評估」機制 | Sprint 2 | 2026-03-04 | 2 |
-| US-20 | 實作「工程領域自動化推理」 | Sprint 4 | 2026-03-04 | 1 |
+| Story ID | 標題 | Sprint | Points |
+|----------|------|--------|--------|
+| US-01 | 建立 Product Discovery 標準測試集 | Sprint 6 | 2 |
+| US-11~22 | (先前 Sprint 已完成之框架基礎建設) | Sprints 1-6 | - |
