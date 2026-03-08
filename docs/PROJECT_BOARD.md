@@ -1,18 +1,19 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 16 (生態系與情報)
-- **Sprint Goal**: 建立生態系註冊表與提示詞自動優化。
-- 預計 Velocity：5 points
+### Sprint 17 (混沌測試與協作)
+- **Sprint Goal**: 驗證系統自癒韌性與建立非同步協作機制。
+- 預計 Velocity：6 points
 
 ## 🎯 當前里程碑：v1.2 深度演進與生態系
 
-### 🚀 Sprint Backlog (Sprint 16)
-(所有 Stories 已完成)
+### 🚀 Sprint Backlog (Sprint 17)
+- [ ] **US-37**: Chaos Monkey 自癒壓力測試 (L) [進行中]
+- [ ] **US-39**: 多 Agent 異步協作框架 (L) [進行中]
 
 ### 📋 Product Backlog
-- [ ] **US-37**: Chaos Monkey 自癒壓力測試 (L)
-- [ ] **US-39**: 多 Agent 異步協作框架 (L)
+- [ ] **US-40**: 建立全域錯誤特徵指紋庫 (M)
+- [ ] **US-41**: 強化外部 API 依賴韌性 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
