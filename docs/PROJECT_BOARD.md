@@ -1,23 +1,24 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 20 (規則自動化)
-- **Sprint Goal**: 建立規則熱更新與結構保護機制。
+### Sprint 21 (知識聯邦)
+- **Sprint Goal**: 建立跨專案日誌同步機制。
 - 預計 Velocity：3 points
 
 ## 🎯 當前里程碑：v1.3 群體演進與自動防禦
 
-### 🚀 Sprint Backlog (Sprint 20)
+### 🚀 Sprint Backlog (Sprint 21)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-57**: 建立跨專案進化日誌同步機制 (M)
 - [ ] **US-58**: 建立正式的對抗性辯論框架 (M)
 - [ ] **US-59**: 執行 Chaos Monkey v2 終極自癒壓力測試 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-57 | 建立跨專案進化日誌同步機制 | Sprint 21 | 2 |
+| US-25 | 建立全域 KM 雲端同步 (探路者) | Sprint 21 | 1 |
 | US-55 | 實作 prompt_patcher.sh | Sprint 20 | 2 |
 | US-56 | 升級 quality_gate.sh | Sprint 20 | 1 |
 | US-42 | Agent 自主學習摘要機制 | Sprint 19 | 3 |
