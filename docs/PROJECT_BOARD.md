@@ -10,7 +10,6 @@
 ### 🚀 Sprint Backlog (Sprint 8)
 - [ ] **US-04**: 執行對標測試與分析報告 (M) [進行中]
 - [ ] **US-03**: 封裝 Zero-Shot Ideation 能力 (M)
-- [ ] **US-02**: 制定 Product Discovery 評估指標與計分卡 (S)
 - [ ] **#52**: retro: 建立 Sprint Planning 前的看板與 GitHub 對齊機制 (S)
 
 ### 📋 Product Backlog
@@ -21,6 +20,7 @@
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-02 | 制定 Product Discovery 評估指標與計分卡 | Sprint 8 | 1 |
 | US-09 | 實作「錯誤即 Issue」的自癒追蹤機制 | Sprint 7 | 2 |
 | US-08 | 消除「Wait-for-Prompt」反模式 | Sprint 7 | 1 |
 | US-07 | 強化指令生成的可靠性與語法自檢 | Sprint 7 | 2 |
