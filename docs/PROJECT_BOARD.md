@@ -1,22 +1,24 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 17 (混沌測試與協作)
-- **Sprint Goal**: 驗證系統自癒韌性與建立非同步協作機制。
-- 預計 Velocity：6 points
+### Sprint 18 (知識與韌性)
+- **Sprint Goal**: 建立錯誤指紋庫與強化 API 韌性。
+- 預計 Velocity：4 points
 
 ## 🎯 當前里程碑：v1.2 深度演進與生態系
 
-### 🚀 Sprint Backlog (Sprint 17)
+### 🚀 Sprint Backlog (Sprint 18)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-40**: 建立全域錯誤特徵指紋庫 (M)
-- [ ] **US-41**: 強化外部 API 依賴韌性 (M)
+- [ ] **US-42**: 實作 Agent 自主學習摘要機制 (L)
+- [ ] **US-43**: 建立跨專案進化指標對標網 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
-|----------|------|--------|--------|
+|----------|------|--------|----------|
+| US-40 | 建立全域錯誤特徵指紋庫 | Sprint 18 | 2 |
+| US-41 | 強化外部 API 依賴韌性 | Sprint 18 | 2 |
 | US-37 | Chaos Monkey 自癒壓力測試 | Sprint 17 | 3 |
 | US-39 | 多 Agent 異步協作框架 | Sprint 17 | 3 |
 | US-32 | 建立 Agent 生態系統註冊表 | Sprint 16 | 2 |

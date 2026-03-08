@@ -10,7 +10,30 @@ check_file() {
   fi
 }
 
-# 產出標準化的 RCA 紀錄 (模擬)
-log_failure() {
-  echo "執行 RCA：$1" >> docs/km/Evolution_Log.md
+# 具備指數退避的重試函數 (US-41)
+retry_with_backoff() {
+  local max_attempts=3
+  local timeout=1
+  local attempt=1
+  local exitCode=0
+
+  while [ $attempt -le $max_attempts ]; do
+    set +e
+    "$@"
+    exitCode=$?
+    set -e
+
+    if [ $exitCode -eq 0 ]; then
+      return 0
+    fi
+
+    echo "⚠️ 指令失敗 (Exit Code: $exitCode)，正在進行第 $attempt 次重試..."
+    sleep $timeout
+    attempt=$((attempt + 1))
+    timeout=$((timeout * 2))
+  done
+
+  echo "❌ 達到最大重試次數，任務失敗。"
+  return $exitCode
 }
+
