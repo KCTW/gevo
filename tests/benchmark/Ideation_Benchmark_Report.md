@@ -1,17 +1,34 @@
-# 對標測試總結報告 (Ideation Benchmark Report)
+# Product Discovery Ideation 對標測試報告 (Benchmark Report)
 
-## 綜合評分 (Gemini vs Claude Code 基準)
-- **CASE-01 (理財 App)**: 4.8/5 (精確掌握 Local-first, 離線狀態機)
-- **CASE-02 (CLI 工具)**: 4.6/5 (AST 解析與 Git Hook 實用度高)
-- **CASE-03 (企業 CRM)**: 5.0/5 (精確點出 RLS 與 RBAC 租戶隔離)
-- **CASE-04 (協作平台)**: 4.8/5 (CRDT 與 WebSocket 衝突處理到位)
-- **CASE-05 (智慧家庭)**: 4.6/5 (Edge Computing 與本地存活策略明確)
+## 1. 測試概覽
+- **測試日期**: 2026-03-08
+- **測試對象**: Gemini CLI (Zero-Shot Ideation)
+- **測試案例數**: 5 (CASE-01 ~ CASE-05)
+- **平均得分**: 4.26 / 5.0
 
-**平均得分**: 4.76 / 5.0 (達到高階自主分析標準)
+## 2. 各案得分摘要
+| Case ID | 標題 | Score | 亮點 |
+|:---|:---|:---:|:---|
+| CASE-01 | 自動理財 App | 4.0 | 自動化方案明確 |
+| CASE-02 | README 生成器 | 4.3 | 技術選型精準 |
+| CASE-03 | 多租戶 CRM | 4.2 | 數據隔離方案成熟 |
+| CASE-04 | 即時協作代碼 | 4.3 | Yjs 選型合理 |
+| CASE-05 | 智慧家庭中控 | 4.5 | 識別出去中心化價值 |
 
-## 核心進化驗證
-1. **極致精簡 (US-10)**: 報告全數去除主觀評價，純粹條列技術實體。
-2. **客觀推理 (US-05)**: 採用領域驅動 (DDD) 取代了早期的空泛描述。
+## 3. 識別出的行為缺陷 (Reasoning Gaps)
 
-## 下一步改進計畫
-1. 將此 Zero-Shot Ideation 能力封裝回 Shikigami 框架的 `backlog-intake` Skill 中 (US-03)。
+### GAP-01: 忽視橫切關注點 (Cross-cutting Concerns)
+- **現象**: 雖然功能拆解完整，但在 5 個案例中，有 4 個完全忽略了資料隱私、資訊安全 (OWASP) 與法律合規性（如 GDPR）。
+- **影響**: 產出的 Backlog 在進入企業級實作前需要大量人工補充。
+
+### GAP-02: 缺乏 MVP 階段化策略
+- **現象**: 雖然列出了 Priority，但缺乏明確的 Phase 1 vs Phase 2 演進邏輯，容易導致開發初期範圍過大。
+- **影響**: 降低了產品快速驗證 (Lean) 的效率。
+
+### GAP-03: 領域風險識別薄弱
+- **現象**: 對於複雜硬體 (CASE-05) 或複雜同步 (CASE-04)，未能明確列出「最可能失敗的技術假設」或風險。
+- **影響**: 專案規劃缺乏風險對策，可能在後期遭遇技術黑天鵝。
+
+## 4. 進化建議
+- **Prompt Patch**: 在 Ideation 提示詞中強制加入「Security & Compliance」與「MVP Phasing」檢查清單。
+- **Framework**: 將本報告回傳至 PO，作為 US-03 封裝能力的優化依據。

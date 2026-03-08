@@ -1,14 +1,32 @@
-# 測試報告 (TestCase: CASE-04 協作代碼平台)
+# Ideation Benchmark: CASE-04 (Real-time Collaborative Code Sharing)
 
-## 領域實體與狀態
-- **實體**: 程式碼片段 (Snippet)、會話 (Session)、修補程式 (Patch)
-- **狀態**: 編輯中、已同步、版本衝突、已儲存
+## 原始描述
+做一個類似 GitHub Gist 但支援即時協作編輯的代碼分享平台。
 
-## 技術需求 (Zero-Shot)
-- **US-01**: 實作 CRDT (Conflict-free Replicated Data Types) 達成無衝突協作。
-- **US-02**: 基於 WebSockets 的即時狀態廣播 (Presence)。
-- **US-03**: 建立可版本化的代碼存儲與回溯機制。
+## AI 產出 Backlog (MVP)
 
-## 邊界條件
-- 極端高頻併發下的操作衝突。
-- 弱網環境下的補丁合併失敗。
+### 1. 核心願景 (Core Vision)
+提供具備多人即時編輯與語法高亮能力的代碼片段分享工具，類似「代碼界的 Google Docs」。
+
+### 2. 技術棧 (Tech Stack)
+- **Editor**: Monaco Editor (VS Code core)
+- **Real-time Engine**: Yjs (CRDT) + WebSockets
+- **Backend**: Node.js (Socket.io) + Redis (for pub/sub)
+
+### 3. User Stories (Backlog)
+
+| ID | Title | Priority | AC Summary |
+|:---|:---|:---:|:---|
+| US-01 | 多人即時同步 | Must | 使用 CRDT 確保編輯衝突自動合併且延遲極低 |
+| US-02 | 游標共享顯示 | Should | 顯示其他協作者的游標位置與名稱標籤 |
+| US-03 | 代碼片段持久化 | Must | 生成唯一 URL 並儲存代碼、語言類型與標題 |
+| US-04 | 唯讀/編輯模式切換 | Could | 支援產生僅限檢視的分享連結 |
+
+## 4. 自由評估 (Based on US-02 Rubric)
+
+- **MVP 範圍 (Scope)**: 5/5 - 即時同步與持久化是核心。
+- **Story 切分 (Invest)**: 4/5 - CRDT 的實作應單獨拆分，US-01 略大。
+- **技術可行性 (Tech)**: 5/5 - Yjs 是目前的黃金標準。
+- **商業洞察 (Insight)**: 3/5 - 未討論協作者權限與安全性（防注入）。
+
+**綜合評分: 4.3/5.0**
