@@ -8,7 +8,7 @@
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
 ### 🚀 Sprint Backlog (Sprint 8)
-- [ ] **#52**: retro: 建立 Sprint Planning 前的看板與 GitHub 對齊機制 (S) [進行中]
+(所有 Stories 已完成)
 
 ### 📋 Product Backlog
 - [ ] **US-21**: 自癒機制 (Self-Healing RCA) (M)
@@ -18,6 +18,7 @@
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| #52 | retro: 建立 Sprint Planning 前的看板與 GitHub 對齊機制 | Sprint 8 | 1 |
 | US-03 | 封裝 Zero-Shot Ideation 能力 | Sprint 8 | 2 |
 | US-04 | 執行對標測試與分析報告 | Sprint 8 | 2 |
 | US-02 | 制定 Product Discovery 評估指標與計分卡 | Sprint 8 | 1 |
