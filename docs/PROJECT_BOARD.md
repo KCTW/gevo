@@ -8,8 +8,7 @@
 ## 🎯 當前里程碑：v1.2 深度演進與生態系
 
 ### 🚀 Sprint Backlog (Sprint 17)
-- [ ] **US-37**: Chaos Monkey 自癒壓力測試 (L) [進行中]
-- [ ] **US-39**: 多 Agent 異步協作框架 (L) [進行中]
+(所有 Stories 已完成)
 
 ### 📋 Product Backlog
 - [ ] **US-40**: 建立全域錯誤特徵指紋庫 (M)
@@ -18,6 +17,8 @@
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-37 | Chaos Monkey 自癒壓力測試 | Sprint 17 | 3 |
+| US-39 | 多 Agent 異步協作框架 | Sprint 17 | 3 |
 | US-32 | 建立 Agent 生態系統註冊表 | Sprint 16 | 2 |
 | US-36 | 基於 RCA 的情境感知提示詞優化 | Sprint 16 | 2 |
 | US-38 | 自主化文件更新系統 | Sprint 16 | 1 |
