@@ -1,22 +1,25 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 9 (系統自癒與自動化)
-- **Sprint Goal**: 實作工具失敗的自動 RCA 機制，升級看板同步自動化。
-- 預計 Velocity：4 points
+### Sprint 10 (能力封裝與管理)
+- **Sprint Goal**: 將產品發想能力封裝為 Skill，並實作 Sprint 自動化管理。
+- 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 9)
+### 🚀 Sprint Backlog (Sprint 10)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-22**: 封裝能力至 Shikigami Skill (M)
-- [ ] **US-23**: 自動化 Sprint 管理 (L)
+- [ ] **US-24**: 實作動態權重自適應機制 (M)
+- [ ] **US-25**: 建立跨專案知識庫共享 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-22 | 封裝能力至 Shikigami Skill | Sprint 10 | 2 |
+| US-23 | 自動化 Sprint 管理 | Sprint 10 | 3 |
+| #56 | retro: 評估 commit 緩衝提交機制 | Sprint 10 | 1 |
 | US-21 | 自癒機制 (Self-Healing RCA) | Sprint 9 | 2 |
 | US-55 | 升級 sync_board.sh 為自動覆寫 | Sprint 9 | 1 |
 | US-05 | 修正 PO Agent 推理缺陷 | Sprint 9 | 1 |
