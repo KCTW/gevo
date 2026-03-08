@@ -1,22 +1,24 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 18 (知識與韌性)
-- **Sprint Goal**: 建立錯誤指紋庫與強化 API 韌性。
-- 預計 Velocity：4 points
+### Sprint 19 (學習與度量)
+- **Sprint Goal**: 實作自主學習機制與跨專案度量對標。
+- 預計 Velocity：6 points
 
 ## 🎯 當前里程碑：v1.2 深度演進與生態系
 
-### 🚀 Sprint Backlog (Sprint 18)
+### 🚀 Sprint Backlog (Sprint 19)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-42**: 實作 Agent 自主學習摘要機制 (L)
-- [ ] **US-43**: 建立跨專案進化指標對標網 (L)
+- [ ] **US-44**: 建立 Agent 人格特質模型 (M)
+- [ ] **US-45**: 實作進化穩定性壓力測試 (L)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|----------|
+| US-42 | Agent 自主學習摘要機制 | Sprint 19 | 3 |
+| US-43 | 建立跨專案進化指標對標網 | Sprint 19 | 3 |
 | US-40 | 建立全域錯誤特徵指紋庫 | Sprint 18 | 2 |
 | US-41 | 強化外部 API 依賴韌性 | Sprint 18 | 2 |
 | US-37 | Chaos Monkey 自癒壓力測試 | Sprint 17 | 3 |
