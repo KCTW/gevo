@@ -1,22 +1,18 @@
-# 失敗分析與自癒紀錄 (Failure RCA & Self-Healing Log)
+# Failure RCA (Root Cause Analysis) Template
 
-## 1. 事故概況
-- **時間**: {{datetime}}
-- **操作指令**: `{{command}}`
-- **錯誤類型**: {{error_type}} (e.g., SyntaxError, API Timeout, PermissionDenied)
+## 1. 錯誤情境 (Context)
+- **觸發指令/操作**: [例：執行 `cat >> file <<EOF`]
+- **錯誤訊息 (Exit Code)**: [例：Exit Code 2, syntax error]
+- **發生時間**: YYYY-MM-DD
 
-## 2. 失敗分析 (RCA)
-- **原始錯誤訊息**: `{{raw_error}}`
-- **根本原因**: [解釋為什麼會失敗，例如：heredoc 未閉合、gh CLI 版本過舊、標籤名稱包含空格]
-- **受影響範圍**: [受影響的文件或功能]
+## 2. 根因分析 (Root Cause)
+- **直接原因 (Direct Cause)**: [例：heredoc 未正確閉合]
+- **深層原因 (Underlying Cause)**: [例：在未自檢的情況下直接生成多行 shell 腳本，缺乏語法驗證防線]
 
-## 3. 自癒行動 (Self-Healing Actions)
-- [x] **立即修復**: [執行的修正指令]
-- [ ] **知識更新**: [是否需要更新 GEMINI.md 或 KM 文件以防止再次發生]
-- [ ] **Issue 追蹤**: [若無法立即修復，建立的 Issue ID]
+## 3. 修復與預防 (Action Items)
+- **立即修復**: [例：改用 `write_file` 工具重寫]
+- **系統性預防**: [例：在 GEMINI.md 中加入「指令自檢」規則，限制 heredoc 的使用]
 
-## 4. 預防措施 (Prevention)
-[為此類錯誤制定的新規則或檢查清單]
-
----
-[REF: US-21]
+## 4. 驗證 (Validation)
+- [ ] 規則已更新至 `GEMINI.md` 或對應 Skill
+- [ ] 執行 `scripts/regression_test.sh` 確保無副作用
