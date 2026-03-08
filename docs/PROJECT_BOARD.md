@@ -1,22 +1,25 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 10 (能力封裝與管理)
-- **Sprint Goal**: 將產品發想能力封裝為 Skill，並實作 Sprint 自動化管理。
+### Sprint 11 (動態演進與共享)
+- **Sprint Goal**: 實現角色權重動態調整與跨專案知識共享。
 - 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 10)
+### 🚀 Sprint Backlog (Sprint 11)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-24**: 實作動態權重自適應機制 (M)
-- [ ] **US-25**: 建立跨專案知識庫共享 (L)
+- [ ] **US-26**: 實作 Agent 對抗性測試環境 (L)
+- [ ] **US-27**: 建立自動化代碼重構引擎 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-24 | 實作動態權重自適應機制 | Sprint 11 | 2 |
+| US-25 | 建立跨專案知識庫共享 | Sprint 11 | 3 |
+| #57 | retro: 實作自動化品質門禁腳本 | Sprint 11 | 2 |
 | US-22 | 封裝能力至 Shikigami Skill | Sprint 10 | 2 |
 | US-23 | 自動化 Sprint 管理 | Sprint 10 | 3 |
 | #56 | retro: 評估 commit 緩衝提交機制 | Sprint 10 | 1 |
