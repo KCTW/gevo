@@ -1,22 +1,24 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 21 (知識聯邦)
-- **Sprint Goal**: 建立跨專案日誌同步機制。
+### Sprint 22 (對抗辯論)
+- **Sprint Goal**: 建立正式的對抗性審查框架。
 - 預計 Velocity：3 points
 
 ## 🎯 當前里程碑：v1.3 群體演進與自動防禦
 
-### 🚀 Sprint Backlog (Sprint 21)
+### 🚀 Sprint Backlog (Sprint 22)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-58**: 建立正式的對抗性辯論框架 (M)
 - [ ] **US-59**: 執行 Chaos Monkey v2 終極自癒壓力測試 (L)
+- [ ] **US-60**: 建立 Agent 人格特質模型 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-58 | 建立正式的對抗性辯論框架 | Sprint 22 | 2 |
+| US-26 | 對抗審查成果歸檔機制 | Sprint 22 | 1 |
 | US-57 | 建立跨專案進化日誌同步機制 | Sprint 21 | 2 |
 | US-25 | 建立全域 KM 雲端同步 (探路者) | Sprint 21 | 1 |
 | US-55 | 實作 prompt_patcher.sh | Sprint 20 | 2 |
