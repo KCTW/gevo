@@ -1,22 +1,25 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 12 (對抗與重構)
-- **Sprint Goal**: 建立對抗測試環境並實作自動重構引擎。
+### Sprint 13 (發佈與監控)
+- **Sprint Goal**: 實現自主發佈流程與進化指標監控。
 - 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 12)
+### 🚀 Sprint Backlog (Sprint 13)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-29**: 實作自主版本發佈與部署流程 (L)
-- [ ] **US-30**: 建立全域 Evolution 指標監控 (M)
+- [ ] **US-31**: 實作跨專案進化回歸測試 (L)
+- [ ] **US-32**: 建立 Agent 生態系統註冊表 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-29 | 實作自主版本發佈與部署流程 | Sprint 13 | 3 |
+| US-30 | 建立全域 Evolution 指標監控 | Sprint 13 | 2 |
+| #59 | retro: 腳本分類與模組化 | Sprint 13 | 2 |
 | US-26 | 實作 Agent 對抗性測試環境 | Sprint 12 | 3 |
 | US-27 | 建立自動化代碼重構引擎 | Sprint 12 | 2 |
 | #58 | retro: 評估全域 KM 雲端同步 | Sprint 12 | 2 |
