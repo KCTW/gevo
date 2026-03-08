@@ -1,22 +1,25 @@
 # gevo 專案看板 (Project Board)
 
 ## 📊 Sprint 統計
-### Sprint 11 (動態演進與共享)
-- **Sprint Goal**: 實現角色權重動態調整與跨專案知識共享。
+### Sprint 12 (對抗與重構)
+- **Sprint Goal**: 建立對抗測試環境並實作自動重構引擎。
 - 預計 Velocity：7 points
 
 ## 🎯 當前里程碑：Shikigami 自主進化 (Self-Evolution MVP)
 
-### 🚀 Sprint Backlog (Sprint 11)
+### 🚀 Sprint Backlog (Sprint 12)
 (所有 Stories 已完成)
 
 ### 📋 Product Backlog
-- [ ] **US-26**: 實作 Agent 對抗性測試環境 (L)
-- [ ] **US-27**: 建立自動化代碼重構引擎 (M)
+- [ ] **US-29**: 實作自主版本發佈與部署流程 (L)
+- [ ] **US-30**: 建立全域 Evolution 指標監控 (M)
 
 ### ✅ 已完成 (Done)
 | Story ID | 標題 | Sprint | Points |
 |----------|------|--------|--------|
+| US-26 | 實作 Agent 對抗性測試環境 | Sprint 12 | 3 |
+| US-27 | 建立自動化代碼重構引擎 | Sprint 12 | 2 |
+| #58 | retro: 評估全域 KM 雲端同步 | Sprint 12 | 2 |
 | US-24 | 實作動態權重自適應機制 | Sprint 11 | 2 |
 | US-25 | 建立跨專案知識庫共享 | Sprint 11 | 3 |
 | #57 | retro: 實作自動化品質門禁腳本 | Sprint 11 | 2 |
